@@ -247,3 +247,7 @@ hr.style1 {
   .text {font-size: 11px}
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
