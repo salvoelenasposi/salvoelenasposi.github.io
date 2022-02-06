@@ -246,8 +246,3 @@ hr.style1 {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-
-.responsive {
-  width: 100%;
-  height: auto;
-}
