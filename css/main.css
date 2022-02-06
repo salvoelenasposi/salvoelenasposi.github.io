@@ -1,0 +1,214 @@
+body,h1,h2{font-family: "Raleway", sans-serif}
+
+body, html {height: 100%}
+
+p {line-height: 2}
+
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.countdown {
+  background-color: white;
+  text-align: center;
+  width: 60vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  padding: 5px 0 5px 0;
+}
+
+.grid-item {
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
+
+#countdownExpired {
+  font-size: 4.0vw;
+}
+
+.title {
+  background-color: white;
+  text-align: center;
+  font-size: 4.0vw;
+}
+
+.subtitle {
+  background-color: white;
+  text-align: center;
+  font-size: 2.0vw;
+}
+
+.logo {
+  background-color: white;
+  padding-top: 15%;
+  width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  font-size: 2.0vw;
+  min-width: 10vw;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
+
+li span {
+  display: block;
+  font-size: 4.0vw;
+}
+
+#countdown {
+  display: inline-block;
+  font-size: 1.5vw;
+  width: 10vw;
+  text-transform: uppercase;
+  color: black;
+}
+
+#countdown span {
+  display: block;
+  font-size: 4.5vw;
+}
+
+#gtable {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+#gtable td, #gtable th {
+  /*border: 1px solid #ddd;*/
+  padding: 8px;
+}
+
+#gtable tr:nth-child(even){background-color: #f2f2f2;}
+
+#gtable tr:hover {background-color: #ddd;}
+
+#gtable td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#gtable th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#modal table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#modal td  {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.meteo {
+  background-color: transparent;
+  border: 0px none transparent;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.meteo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  background-color: transparent;
+}
+
+
+.gbutton {
+  border-radius: 8px;
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+}
+
+.maps {
+  border: 2px solid blue;
+}
+
+hr.style1 {
+  border-top: 4px double #4CAF50;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #gtable {
+    border: 0;
+  }
+  #gtable caption {
+    font-size: 1.3em;
+  }
+  #gtable thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  #gtable tr {
+    display: block;
+    margin-bottom: .625em;
+  }
+  #gtable td {
+    /*border-bottom: 1px solid #ddd;*/
+    display: block;
+    font-size: .8em;
+    text-align: center;
+  }
+  #gtable td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #gtable td:last-child {
+    border-bottom: 0;
+  }
+  li {
+    min-width: 20vw;
+  }
+  .grid-container {
+    display: block;
+    grid-auto-flow: row;
+    grid-template-columns: auto;
+    padding: 5px 0px 5px 0px;
+  }
+  .grid-item {
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+  }
+  .grid-title {
+    padding: 30px 0px 0px 0px;
+  }
+}
