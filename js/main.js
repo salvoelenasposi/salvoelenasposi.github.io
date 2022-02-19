@@ -27,10 +27,10 @@ let countDown = new Date('2022-04-16T11:30:00').getTime(),
     }
   }, second)
 
-function giftModal(giftId) {
+function giftModal(text) {
   document.getElementById('idGift').style.display='block';
-  document.getElementById('giftName').innerHTML=document.getElementById(giftId).textContent;
-  document.getElementById('giftNameSmall').innerHTML=document.getElementById(giftId).textContent;
+  document.getElementById('giftName').innerHTML=text;
+  document.getElementById('giftNameSmall').innerHTML=text;
 }
 
 
