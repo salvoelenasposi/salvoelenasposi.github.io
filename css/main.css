@@ -213,33 +213,57 @@ hr.style1 {
   }
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
 .active {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.7s;
-  animation-name: fade;
-  animation-duration: 1.7s;
+div#slider {
+	width: 80%;
+	max-width: 1000px;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .0} 
-  to {opacity: 1}
+div#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	text-align: left;
 }
 
-@keyframes fade {
-  from {opacity: .0} 
-  to {opacity: 1}
+div#slider figure img {
+	width: 20%;
+	height: auto;
+	float: left;
+}
+
+div#slider {
+	width: 80%;
+	max-width: 1000px;
+	overflow: hidden; 
+}
+
+@keyframes slidy { 
+	0%  { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; } 
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; } 
+}
+
+div#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	left: 0;
+	text-align: left;
+	animation: 30s slidy infinite;  
 }
 
 /* On smaller screens, decrease text size */
